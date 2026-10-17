@@ -1,0 +1,15 @@
+# Résultats de compilation locaux
+defense/bin/
+defense/obj/
+
+# Traces temporaires et charges produites pendant le laboratoire
+**/badfile
+**/*.o
+**/*.out
+**/.gdb_history
+**/peda-session-*.txt
+
+# Fichiers d'éditeur et système
+.docker-config/
+.DS_Store
+*~

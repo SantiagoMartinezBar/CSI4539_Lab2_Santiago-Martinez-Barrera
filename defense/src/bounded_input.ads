@@ -5,7 +5,7 @@ package Bounded_Input is
    subtype Valid_Length is Natural range 0 .. Maximum_Length;
 
    type Bounded_Buffer is record
-      Data   : String (Buffer_Index) := (others => ' ');
+      Data   : String (Buffer_Index) := [others => ' '];
       Length : Valid_Length := 0;
    end record;
 

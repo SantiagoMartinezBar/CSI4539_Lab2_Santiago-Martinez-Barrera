@@ -11,7 +11,7 @@ package body Bounded_Input is
         (1 .. Stream_Element_Offset (Maximum_Length + 1));
       Last : Stream_Element_Offset;
    begin
-      Result := (Data => (others => ' '), Length => 0);
+      Result := (Data => [others => ' '], Length => 0);
       Input_IO.Open (File, Input_IO.In_File, File_Name);
       Input_IO.Read (File, Raw, Last);
       Input_IO.Close (File);
